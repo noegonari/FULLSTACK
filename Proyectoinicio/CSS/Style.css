@@ -1,0 +1,735 @@
+:root {
+    --ColorPrincipal: #00e497;
+    --ColorSecundario: #02052f;
+    --FontPrincipal: "Open Sans", sans-serif;
+
+}
+
+
+
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::after, *, *::before{
+    box-sizing: inherit;
+}
+
+
+body {
+
+    font-size: 16px;
+    font-family: var(--FontPrincipal);
+}
+
+/* esto me hace que la relación entre rem y px sea 1 REM=10 px */
+.contenedor {
+    width: 50%;
+    margin: 0 auto
+}
+@media(max-width: 1140px){
+   .contenedor{
+    width: 50%;
+    margin: 0 auto;
+   } }
+
+
+
+.primeraseccion a {
+    color: blueviolet;
+}
+
+
+
+.separador {
+    margin: 0px 5px 0px 5px;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 24px;
+}
+
+.login a {
+    color: var(--ColorPrincipal);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.informate {
+    color: #FFFFFF;
+    font-family: var(--FontPrincipal);
+    font-size: 14px;
+    background-color: var(--ColorPrincipal);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.informate:hover {
+    background: #17a2b8;
+}
+
+.titulo strong {
+    color: black;
+    font-family: var(--FontPrincipal);
+    font-size: 47px;
+    background-color: white;
+    padding: 3px 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    display: block;
+    max-width: fit-content;
+
+
+}
+
+.titulo {
+    color: var(--ColorPrincipal);
+    display: flex;
+    flex-direction: column;
+    flex: 76%;
+    max-width: 76%;
+
+}
+
+
+
+.cursos {
+    color: #fff;
+    border: 2px solid var(--ColorSecundario);
+    background: var(--ColorSecundario);
+    border-radius: 1rem;
+    font-family: var(--FontPrincipal);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2.4rem 9.4rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1 rem;
+
+
+}
+
+.cursos:hover {
+    color: var(--ColorSecundario);
+    border: 2px solid var(--ColorSecundario);
+    background: white;
+}
+
+.imagenverdechicos {
+    background-image: url(../img/imagen\ chicos.png);
+    background-position: top left;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+
+.loca {
+    display: inline;
+}
+
+/* .ciudades a{
+    color: white;
+    background-color: var(--ColorPrincipal);
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+}
+.ejercicioflex {
+background-color: #00e497;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex: 50%;
+max-width: 50%; 
+}
+.ejercicioflex a{ 
+    color: #02052f;
+} */
+
+
+
+
+
+.logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    margin-top: -120px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.logo1 {
+    max-width: 70%;
+}
+
+.logo2 {
+    max-width: 30%;
+    margin: 30px;
+}
+
+
+
+
+.menuprincipal {
+    display: flex;
+}
+
+.menuimagen {
+    display: flex;
+    flex: 66%;
+    max-width: 66%;
+    justify-content: flex-start;
+}
+
+.menuenlace {
+    display: flex;
+    flex: 34%;
+    max-width: 34%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuprincipal .informate{
+    color:white;
+    background-color: var(--ColorPrincipal);
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 0.6rem 1.2 rem;
+    text-decoration: none;
+}
+
+.menuenlace a {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.menuenlace .informate:hover {
+    text-decoration: underline;
+}
+
+
+
+@media(max-width:768px){
+.menuimagen{
+    flex:100%;
+    max-width: 100%;
+    justify-content: center;
+}
+.menuenlace {
+    flex:100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menuprincipal{
+    flex-wrap: wrap;
+}
+
+.menuenlace a {
+    margin: 25px opx 25px opx ;
+    border-top: 1px var(--ColorSecundario);
+    padding: 10px 0px;
+    display: block;
+
+}
+@media(max-width:1140px){
+    .contenedor{
+        width: 80%;
+        margin: 0 auto;}
+    .titulo h1{
+    flex: 100%;
+    max-width:100%;
+    }
+    .titulostrong{
+        font-size: 3.7rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width:  450px){   esto sirve para cuando cambie de tipo de pantalla movil, tablet... se vea
+
+
+    body {
+        background-color: blue;
+    }
+   
+}
+@media (min-width:  900px){
+
+    body {
+        background-color: aquamarine;
+    }
+   
+}
+@media (min-width: 450px){
+
+    body {
+        background-color: yellow;
+    }
+   
+} */
+
+
+
+
+
+.ciudades h3, .ciudades h2{
+font-weight: 800;
+font-family: var(--ColorPrincipal) ;
+text-align:center ;
+text-transform: uppercase;
+
+}
+.ciudades h2{
+color: var(--ColorSecundario) ;
+font-size: 1.7 rem;
+padding: 40px;
+}
+.ciudades h3{
+    color: var(--ColorPrincipal);
+    margin-bottom: 30px;
+    font-size: 1.7 rem;
+    padding: 40px 0px;
+}
+.ciudades a{
+    background-color: white;
+    border-radius: 8px;
+    color: var(--ColorSecundario);
+    font-weight: bold;
+    font-size: 1.4 rem;
+    padding: 10px 24px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-right: 0.5rem; 
+    border: 1px solid var(--ColorPrincipal);
+}
+.ciudades .vertodo{
+    background-color: var(--ColorPrincipal);
+    color: white;
+}
+.ciudades a:hover{
+    background-color: var(--ColorPrincipal);
+    color: white;
+}
+.ciudades .vertodo:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.inscribir .marketing {
+    background-image: url(../img/5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 15px;
+    
+}
+.inscribir .programacion{
+    background-image: url(../img/4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left: 15px;
+   
+}
+.inscribir{
+    display: flex;
+    justify-self: space-between;
+    margin-top: 85px;
+}
+.inscribir div {
+border-radius: 10px;
+padding: 40px 60px;
+flex-direction: column;
+flex: 50%;
+max-width: 50%;
+display: flex;
+justify-content: space-between;
+}
+
+.inscribir a{
+padding: 20px 44px;
+background-color: white;
+border: 2px solid white;
+font-family: "DinBold", sans serif;
+font-weight: 700;
+font-size: 14px;
+color: var(--ColorSecundario);
+border-radius: 10px;
+text-transform: uppercase;
+max-width: fit-content;
+margin-top: 80px;
+text-decoration: none;
+font-family: var(--FontPrincipal);
+}
+
+.inscribir a:hover{
+  
+    color: white;
+    background-color: var(--ColorPrincipal);
+}
+.inscribir h2{
+    font-size: 2.7rem;
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width:1140px){
+    .inscribir a{
+        margin-top: 40px;
+    }
+
+}
+
+@media(max-width:760px){
+    .inscribir{
+        flex-direction: colum;
+    }
+   .inscribir  div{
+    flex: 100%;
+    max-width: 100%;
+   }
+}
+
+
+
+
+.interesa {
+margin-bottom: 0.5rem;
+font-family: var(--FontPrincipal);
+font-weight: 500;
+line-height: 1.2;
+color: var(--ColorSecundario);
+text-align: center;
+
+}
+
+.pidemelo a{
+background-color: var(--ColorPrincipal);
+color: white ;
+text-decoration: none ;
+border-radius: 96px;
+margin-top: 20px;
+font-weight: 800;
+padding: 20px 40px;
+}
+.curso2 .pidemelo{
+justify-content: center;
+display: flex;
+}
+.pidemelo a:hover{
+text-decoration: underline;
+background-color: var(--ColorSecundario);
+}
+
+
+
+
+.secciontexto {
+    display:flex
+}
+.secciontexto div{
+    flex: 50%;
+    max-width: 50%;
+
+}
+
+.textoizq h2{
+    color: var(--ColorSecundario);
+    font-size: 24px;
+    font-weight: 800; 
+}
+
+.textoizq h3{
+color: var(--ColorSecundario);
+text-transform: uppercase;
+font-weight: 800
+}
+.textoizq h4{
+font-weight: 800;
+color: var(--ColorSecundario);
+font-size: 15px;
+line-height: 1.5;
+}
+
+.textoizq p{
+    color: var(--ColorSecundario);
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.textoizq .prienlace{
+    color: var(--ColorPrincipal);
+    text-decoration: underline ;
+    text-transform:  uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.textoizq  .infografia{
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.segenlace{
+    background-color: var(--ColorSecundario);
+    border: 2px solid var(--ColorSecundario);
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700 ;
+    border-radius: 10px;
+    margin-top: 25 px;
+    padding: 20px 40px ;
+    display: inline-block;
+}
+
+.segenlace:hover{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario)
+}
+
+.textoder{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-end;
+}
+
+.textoder h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.textoder p{
+    background-color: var(--ColorSecundario);
+    padding: 3px 15px;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+}
+.textoder a{
+    background-color: var(--ColorPrincipal);
+    max-width: 60%;
+    text-align: center;
+    color: var(--ColorSecundario);
+    font-weight: 800;
+    padding: 13px 40px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid var(--ColorSecundario);
+}
+.textoder a:hover{
+    color:white;
+    background-color: var(--ColorSecundario);}
+
+
+
+
+.ejercicioboxmodel{
+height: 500px;
+margin: 100px;
+padding: 20px ;
+border: 2px solid black;
+background-color: red;
+position: relative;
+background-image: linear-gradient(to left, red 0%, blue 100% );
+}
+
+.ejercicioboxmodel h2::after{
+    content: "añadido desde css, no se puede copiar";
+   
+}
+.ejercicioboxmodel h2{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.video {
+margin-top: 150px;
+margin-bottom: 70px;
+position: relative; 
+width: 100%;
+}
+
+.video iframe{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 625px;
+}
+
+
+
+
+
+.localizaciones h2, .localizaciones h3, .locaclizaciones p{
+    color: white
+}
+.localizaciones{
+    background-color: var(--ColorSecundario);
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.loca {
+    display: flex;
+    flex-wrap: wrap;
+}
+.loca div{
+  flex: 25%;
+  max-width: 25%;
+  padding-right: 15px;
+
+}
+.localizaciones h2{
+    font-size: 27px;
+    font-weight: 700;
+}
+.localizaciones h3{
+    margin: bottom 0px; 
+    padding-bottom: 0px;
+}
+.localizaciones p{
+    margin: bottom 0px; 
+    padding-bottom: 0px;
+    color: white;
+}
+
+
+
+.contacto{
+    padding-top: 90px;
+    padding-bottom: 150px;
+    background-color: var(--ColorPrincipal) ;
+}
+.contacto h2, .contacto h3{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
+.locaGrid{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4,23%);
+    gap: 15px;
+}
+
+
+.menufooter {
+    padding-top: 50px 0px; 
+    border-botton: 1px solid var(--ColorSecundario)
+}
+.menufooter a{
+    font-weight: 800 ;
+    font-size: 70px;
+
+}
+.paglegal{
+    margin-botton: 40px;
+    padding: 20px 0px;
+    border-botton: 1px solid var(--ColorPrincipal)
+}}
+
+
+
+
+
+
+
+
+
+/*Ejercicio para explicar el GRID-ROW Y  GRID-COLUM*/
+
+
+/*.ejercicioGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.hijo1{
+    background-color: red;
+    height: 500px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.hijo2 {
+    background-color: green;
+    height: 500px;
+    grid-row: 1/2;
+    grid-column: 4/5 ;
+}
+.hijo3 {
+    background-color: blue;
+    height: 500px;
+    grid-row: 2/3;
+    grid-column: 3/5;
+}*/
+
+
+.ejercicioGrid{
+    display: grid;
+    grid-template-columns: 10% 40% 20% 20% 10% ; 
+    /* si pocrentaje por que es ancho pantalla no tengo altura por eso pongo valores fijos */
+    grid-template-rows: 200px 600px 200px;
+}
+
+.hijo1{
+    background-color: red;
+       grid-row: 1;
+       grid-column: 2/4;
+ 
+}
+.hijo2{
+    background-color: green;
+    grid-row: 2/4;
+    grid-column: 4/6;
+}
+.hijo3 {
+    background-color: blue;
+    grid-row: 2/4;
+    grid-column: 1;
+}
